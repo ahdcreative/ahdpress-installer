@@ -1,0 +1,34 @@
+{
+  "name": "ahdcreative/ahdpress-installer",
+  "description": "AHDPress installer package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Luca",
+      "email": "luca@adh-creative.agency"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^8.1",
+    "symfony/console": "^v7.0.4",
+    "symfony/process": "v7.0.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5|^9.6",
+    "spatie/ray": "dev-main"
+  },
+  "bin": [
+    "bin/ahdpress"
+  ],
+  "autoload": {
+    "psr-4": {
+      "AHDCreative\\AHDPressInstaller\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AHDCreative\\AHDPressInstaller\\Console\\Tests\\": "tests/"
+    }
+  }
+}
